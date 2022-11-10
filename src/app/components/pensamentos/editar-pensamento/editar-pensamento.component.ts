@@ -15,7 +15,8 @@ export class EditarPensamentoComponent implements OnInit {
     id: 0,
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: '',
+    favorito: false
   }
   constructor(
     private service: PensamentoService,
@@ -39,5 +40,7 @@ export class EditarPensamentoComponent implements OnInit {
   cancelar() {
     this.router.navigate(['/listarPensamento'])
   }
+
+
 
 }
